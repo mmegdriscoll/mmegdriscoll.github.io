@@ -21,6 +21,10 @@ body {
   justify-content: center;
 }
 
+a {
+  color: black;
+}
+
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -39,7 +43,7 @@ body {
 /* Style navigation menu links */
 .topnav a {
   color: black;
-  padding: 14px 16px;
+  padding: 8px;
   text-decoration: none;
   font-size: 32px;
   display: block;
@@ -67,11 +71,20 @@ body {
 }
 
 h1 {
+  padding-top: 150px;
   font-size: 72px;
 }
 
 .megpic {
  max-width: 35%;
+}
+
+#peabody {
+  font-size: 32px;
+}
+
+#sevenyears {
+  font-size: 24px;
 }
 
 #portrait {
@@ -90,8 +103,7 @@ h1 {
   display: flex;
   align-items: center;
   padding: 0;
-  background-color: #1E1E1E;
-  color: #fff;
+  background-color: #9cedff;
 }
 
 .square img {
@@ -107,4 +119,15 @@ h1 {
 
 .square.fullImg img {
   object-fit: cover;
+}
+
+#spotify {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#links {
+  font-size: 32px;
+  margin-top: -32px;
 }
