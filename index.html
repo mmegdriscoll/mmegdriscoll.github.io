@@ -4,7 +4,7 @@
   <script>
     function dropdown() {
       var x = document.getElementById("myLinks");
-      if (document.cookie === "displaymenu=true") {
+      if (x.style.display === "block") {
         x.style.display = "none";
         document.cookie = "displaymenu=false";
       } else {
@@ -23,7 +23,7 @@
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <a href="index.html">Home</a>
-          <a href="#otherwork">Other Work</a>
+          <a href="otherwork.html">Other Work</a>
           <a href="#about">Contact</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -71,13 +71,6 @@
       </div>
 
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1csYyRLk7zugBFExdEUpy9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-      <p>Prior to Gimlet, I worked at <i>The Late Show with Stephen Colbert</i> as an associate field producer and as the writers assistant at <i>The Colbert Report</i>.</p>
-
-      <img class="megpic" src="assets/lateshow.jpg">
-      <img class="megpic" src="assets/kermit.jpg">
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/JgMiS81jFyE?si=Bi9mUWnDrKstOmOR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
 </body>
