@@ -11,6 +11,16 @@
       }
     }
   </script>
+  <script src="assets/mobilecheck.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if(mobileCheck()) {
+        document.getElementById("spotify").remove();
+        var spotifyLink = document.getElementById("spotifylink");
+        spotifyLink.style.display = "block";
+      }
+    })
+  </script>
 </head>
 
 <body>
@@ -69,7 +79,8 @@
       </div>
 
       <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1csYyRLk7zugBFExdEUpy9?utm_source=generator&theme=0" width="66%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <a href="https://open.spotify.com/playlist/1csYyRLk7zugBFExdEUpy9" style="font-size:24px; display:none;">Spotify playlist of some episodes I made</a>
+
+      <a href="https://open.spotify.com/playlist/1csYyRLk7zugBFExdEUpy9" id="spotifylink" style="font-size:24px; display:none; margin-bottom:200px;">Spotify playlist of some episodes I made</a>
 
     </div>
   </div>
